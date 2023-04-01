@@ -15,8 +15,8 @@
 }
 
 .homeSection .landing-contents {
-  padding-top:3%;
-  padding-bottom:3%;
+  padding-top:2%;
+  padding-bottom:2%;
   background-color:aliceblue;
   position:absolute;
   display:flex;
@@ -39,7 +39,7 @@
   display:flex;
   gap:8px;
   padding:16px 0;
-  margin-top:3%;
+  margin-top:2%;
 }
 
 .btn-primary{
