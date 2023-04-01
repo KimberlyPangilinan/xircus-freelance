@@ -2,16 +2,16 @@ import React from 'react'
 import Header from '../components/header'
 import { TabList, TabPanels, TabPanel, Tabs,Tab,Heading,Container } from '@chakra-ui/react'
 import FreelancerCard from '../components/freelancerCard'
-const FreelancerOage = () => {
+const BrowseFreelancer = () => {
   return (
-    <div >
+    <div>
       <Header/> 
       <section className="freelancerList">
-        <Heading>Browse Jobs</Heading>
+        <Heading>Browse Freelancer</Heading>
         <Tabs width='80%' size='md' height='100vh' variant='enclosed'>
             <TabList>
                 <Tab>All</Tab>
-                <Tab>Programmers</Tab>
+                <Tab>Programmer</Tab>
                 <Tab>Designer</Tab>
                 <Tab>Web 3 Dev</Tab>
                 <Tab>Artist</Tab>
@@ -25,43 +25,11 @@ const FreelancerOage = () => {
                             freelancer={"Jane Doe"}
                             productName={"Landing Website Template"}
                             description={"This template is created using React Native, with different components"}
-                        />
-
-                        <FreelancerCard
-                            img ={"https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1115&q=80"}
-                            alt={"landing website template"}
-                            freelancer={"by Jane Doe"}
-                            productName={"Landing Website Template"}
-                            description={"This template is created using React Native, with different components"}
-                        />
-
-                        <FreelancerCard
-                            img ={"https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80"}
-                            alt={"landing website template"}
-                            freelancer={"by Jane Doe"}
-                            productName={"Landing Website Template"}
-                            description={"This template is created using React Native, with different components"}
-                        />
-                        
-                        <FreelancerCard
-                            img ={"https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"}
-                            alt={"landing website template"}
-                            freelancer={"by Jane Doe"}
-                            productName={"Landing Website Template"}
-                            description={"This template is created using React Native, with different components"}
-
-                        />
-                        <FreelancerCard
-                            img ={"https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"}
-                            alt={"landing website template"}
-                            freelancer={"by Jane Doe"}
-                            productName={"Landing Website Template"}
-                            description={"This template is created using React Native, with different components"}
-                        />
+                    />
                     </div> 
                 </TabPanel>
                 <TabPanel>
-                <p>two!</p>
+                    <p>two!</p>
                 </TabPanel>
             </TabPanels>
         </Tabs>
@@ -71,4 +39,4 @@ const FreelancerOage = () => {
   )
 }
 
-export default FreelancerOage
+export default BrowseFreelancer

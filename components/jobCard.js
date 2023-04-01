@@ -2,7 +2,7 @@ import React from 'react'
 import { Tag,Card, CardHeader, CardBody, CardFooter, Image,Stack,Heading,Text,Divider,Button,ButtonGroup } from '@chakra-ui/react'
 import Btn from "./btn"
 import Badge from './badge'
-const FreelancerCard = ({img,alt,freelancer,description,price}) => {
+const JobCard = ({img,alt,freelancer,description,price}) => {
   return (
     <Card minW='60%' maxW='100%'>
       <CardBody className='cardbody'> 
@@ -52,4 +52,4 @@ const FreelancerCard = ({img,alt,freelancer,description,price}) => {
   )
 }
 
-export default FreelancerCard
+export default JobCard

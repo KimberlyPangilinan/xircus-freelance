@@ -15,9 +15,9 @@ export default function Header() {
             <Box p='2'>
               <Heading size='md'><NavLink route="/" name="DecentraHire"/></Heading>
             </Box>
-              <NavLink route="/" name="Jobs Board"/>
-              <NavLink route="/" name="Freelancers Tavern"/>
-              <NavLink route="/projectList" name="Projects Saloon"/>
+              <NavLink route="/browseJobs" name="Jobs Board"/>
+              <NavLink route="/browseFreelancer" name="Freelancers Tavern"/>
+              <NavLink route="/browseProjects" name="Projects Saloon"/>
             <Spacer />
             <ButtonGroup gap='2'>
                 <ConnectModal>
@@ -26,8 +26,6 @@ export default function Header() {
                 <MenuDrawer wallet={wallet}/>
             </ButtonGroup>
         </Flex>
-
-            
     </>
   )
 }
