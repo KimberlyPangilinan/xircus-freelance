@@ -1,6 +1,6 @@
 import { XircusChakraProvider } from "@xircus-web3/components"
-import './globals.css'
-import './Home.module.css'
+import './../styles/globals.css'
+import './../styles/home-section.css'
 
 function MyApp({ Component, pageProps }) {
   return (

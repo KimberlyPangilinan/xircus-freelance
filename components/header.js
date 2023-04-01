@@ -11,13 +11,13 @@ export default function Header() {
 
   return (
     <>    
-        <Flex backgroundColor={''} minWidth='max-content' alignItems='center'  py={4} px={16} gap='2' mb={8}>
+        <Flex backgroundColor={''} minWidth='max-content' alignItems='center'  py={4} px={16} gap='2' >
             <Box p='2'>
-              <Heading size='md'>Chakra App</Heading>
+              <Heading size='md'><NavLink route="/" name="DecentraHire"/></Heading>
             </Box>
               <NavLink route="/" name="Browse Jobs eme"/>
               <NavLink route="/" name="Browse Freelancers"/>
-              <NavLink route="/" name="Browse Projects"/>
+              <NavLink route="/projectList" name="Browse Projects"/>
             <Spacer />
             <ButtonGroup gap='2'>
                 <ConnectModal>

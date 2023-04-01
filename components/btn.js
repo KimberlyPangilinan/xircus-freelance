@@ -1,9 +1,9 @@
 import React from 'react'
 import { Button, ButtonGroup } from '@chakra-ui/react'
-const Btn= ({title}) => {
+const Btn= ({title,type,variant}) => {
   return (
     <>
-      <Button>{title}</Button>
+      <Button variant={variant} className={type}>{title}</Button>
     </>
   )
 }

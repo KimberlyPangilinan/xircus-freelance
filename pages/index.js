@@ -1,7 +1,7 @@
 import { useWallet, useNetwork } from '@xircus-web3/react'
 import { useState } from 'react'
 import Header from '../components/header'
-import HomeSection from '../sections/homeSection/homeSection'
+import HomeSection from '../sections/homeSection'
 import { Container } from '@chakra-ui/react'
 
 export default function index() {
