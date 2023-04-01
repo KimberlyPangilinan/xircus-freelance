@@ -20,10 +20,11 @@
     "@xircus-web3/sdk": "^1.0.67",
     "framer-motion": "^10.10.0",
     "lodash": "^4.17.21",
-    "next": "13.2.3",
+    "next": "^13.2.3",
     "next-transpile-modules": "^10.0.0",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "styled-components": "^5.3.9"
   },
   "devDependencies": {
     "eslint": "8.35.0",

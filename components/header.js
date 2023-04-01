@@ -15,9 +15,9 @@ export default function Header() {
             <Box p='2'>
               <Heading size='md'><NavLink route="/" name="DecentraHire"/></Heading>
             </Box>
-              <NavLink route="/jobsPage" name="Browse Jobs eme"/>
-              <NavLink route="/freelancerPage" name="Browse Freelancers"/>
-              <NavLink route="/projectPage" name="Browse Projects"/>
+              <NavLink route="/" name="Jobs Board"/>
+              <NavLink route="/" name="Freelancers Tavern"/>
+              <NavLink route="/projectList" name="Projects Saloon"/>
             <Spacer />
             <ButtonGroup gap='2'>
                 <ConnectModal>
