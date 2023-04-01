@@ -3,11 +3,11 @@ import Header from '../components/header'
 import HomeSection from '../sections/homeSection'
 import { Heading,Container } from '@chakra-ui/react'
 import ProjectCard from '../components/projectCard'
-const ProjectList = () => {
+const ProjectPage = () => {
   return (
-    <div className="projectList">
+    <div>
       <Header/> 
-      <section>
+      <section className="projectList">
         <Heading>Product List</Heading>
         <div className="projectItems">
           <ProjectCard
@@ -55,4 +55,4 @@ const ProjectList = () => {
   )
 }
 
-export default ProjectList
+export default ProjectPage

@@ -154,6 +154,16 @@ a {
   
 }
 
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}
+
 .projectList section{
 display:flex;
 flex-direction: column;
@@ -189,13 +199,19 @@ padding:24px;
 section {
   min-height:90vh;
 }
-  
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+
+.cardBody{
+  display:flex;
+  gap:24px;
+}
+
+.freelancerList, .projectList {
+  flex-direction: column;
+  padding:24px;
+  gap:40px;
+}
+
+.freelanceDetails{
+  display:flex;
+  gap:16px;
 }
