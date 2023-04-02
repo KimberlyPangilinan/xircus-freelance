@@ -26,12 +26,14 @@ export default function MenuDrawer({wallet}) {
           <DrawerOverlay />
           <DrawerContent>
             <DrawerCloseButton />
-            <DrawerHeader>Menu</DrawerHeader>
+            <DrawerHeader>More</DrawerHeader>
   
             <DrawerBody>
-            <div>Address: {wallet.account}</div>
-            <div>Balance: {wallet.balance}</div>
+            <Heading as ="h3" size='sm' colorScheme='blue'>Wallet Details:</Heading> 
+            <div><Heading size='xs'>Address:</Heading> {wallet.account}</div>
+            <div><Heading size='xs'>Balance:</Heading>  {wallet.balance}</div>
                 <Stack spacing='24px'>
+                <Heading as ="h3" size='sm'>Network Details:</Heading> 
                 <Box>
                 <ChangeNetwork width="100%"/>
                 </Box>
