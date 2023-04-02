@@ -15,15 +15,11 @@
 }
 
 .homeSection .landing-contents {
-  padding-top:2%;
-  padding-bottom:2%;
-  background-color:aliceblue;
+  padding-top:2vh;
   position:absolute;
   display:flex;
   top:35vh;
-  width:50%;
-  margin-left:25%;
-  margin-right:25%;
+  width:100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
