@@ -4,45 +4,44 @@ import Btn from "./btn"
 import Badge from './badge'
 const FreelancerCard = ({img,alt,freelancer,description,priceperhour,noOfWorksDone}) => {
   return (
-    <Card minW='60%' maxW='100%'>
-      <CardBody className='cardbody'> 
-        <Stack mt='6' spacing='3'>
-            <div className="cardBody">
-              <Image
-                src={img}
-                alt={alt}
-                borderRadius='lg'
-                objectFit='cover'
-                minWidth='40px'
-                width='40px'
-                height='40px'
-                aspectRatio='1'
-              />
-              <Heading size='md'><Badge freelancer={'Jane Doe'} title={'I'}/></Heading>
-            </div>
-            <Text>
-                {description}
-            </Text>
-            <div className="freelanceDetails">
-              <Heading as='h5' size='xs'>${priceperhour} per hour</Heading>
-              <Heading as='h5' size='xs'>{noOfWorksDone} works done</Heading>
-
-            </div>
-            <div className="freelanceDetails">
-              <Tag>Web Design</Tag>
-              <Tag>Web Developer</Tag>
-            </div>
-           
-         
-        </Stack>
-      </CardBody>
-      <Divider />
-      <CardFooter>
-        <ButtonGroup spacing='2'>
-          <Btn type={"btn-primary"} title={"Hire"}/>
-          <Btn variant='ghost'  title={"View"}/>
-        </ButtonGroup>
-      </CardFooter>
+    <Card
+    direction={{ base: 'column', sm: 'row' }}
+    overflow='hidden'
+    variant='outline'
+    minWidth='800px'
+    >
+      <Image
+        objectFit='cover'
+        maxW={{ base: '100%', sm: '200px' }}
+        src='https://images.pexels.com/photos/39866/entrepreneur-startup-start-up-man-39866.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+        alt='John Doe'
+      />
+    
+      <Stack>
+        <CardBody style={{
+          display:'flex',
+          flexDirection:'column',
+          gap:4
+        }}>
+          <Heading size='md'><Badge freelancer={freelancer} title={'I'}/></Heading>
+          <Text py='2'>
+            {description}
+          </Text>
+          <div className="freelanceDetails">
+                <Heading as='h5' size='xs'>{priceperhour} BNB per hour</Heading>
+                <Heading as='h5' size='xs'>{noOfWorksDone} works done</Heading>
+          </div>
+          <div className="freelanceDetails">
+                <Tag>Web Design</Tag>
+                <Tag>Web Developer</Tag>
+          </div>
+          <Divider/>
+          <ButtonGroup spacing='2'>
+            <Btn type={"btn-primary"} title={"Hire"}/>
+            <Btn variant='ghost'  title={"View"}/>
+          </ButtonGroup>
+        </CardBody>
+      </Stack>
     </Card>
   )
 }
