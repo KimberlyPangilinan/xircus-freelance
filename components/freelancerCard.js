@@ -2,7 +2,7 @@ import React from 'react'
 import { Tag,Card, CardHeader, CardBody, CardFooter, Image,Stack,Heading,Text,Divider,Button,ButtonGroup } from '@chakra-ui/react'
 import Btn from "./btn"
 import Badge from './badge'
-const FreelancerCard = ({img,alt,freelancer,description,price}) => {
+const FreelancerCard = ({img,alt,freelancer,description,priceperhour,noOfWorksDone}) => {
   return (
     <Card minW='60%' maxW='100%'>
       <CardBody className='cardbody'> 
@@ -24,8 +24,8 @@ const FreelancerCard = ({img,alt,freelancer,description,price}) => {
                 {description}
             </Text>
             <div className="freelanceDetails">
-              <Heading as='h5' size='xs'>$20/ hour</Heading>
-              <Heading as='h5' size='xs'>250 Jobs Done</Heading>
+              <Heading as='h5' size='xs'>${priceperhour} per hour</Heading>
+              <Heading as='h5' size='xs'>{noOfWorksDone} works done</Heading>
 
             </div>
             <div className="freelanceDetails">
@@ -33,12 +33,7 @@ const FreelancerCard = ({img,alt,freelancer,description,price}) => {
               <Tag>Web Developer</Tag>
             </div>
            
-          <Text color='blue.600' fontSize='2xl'>
-            {price}
-          </Text>
-          <Text color='blue.600' fontSize='2xl'>
-            {price}
-          </Text>
+         
         </Stack>
       </CardBody>
       <Divider />

@@ -11,7 +11,7 @@ const HomeSection = () => {
         <h2 className="subheading">Empower transactions, one block at a time.</h2>
         <div className="btn-group">
         <Link href={"/signUp"}><Btn title={"Sign in as Freelancer"} type={"btn-primary"}/></Link>
-          <Btn title={"Sign in as Client"} type={"btn-secondary"}/>
+        <Link href={"/signUpClient"}> <Btn title={"Sign in as Client"} type={"btn-secondary"}/></Link>
         </div>
       </div>
     </section>

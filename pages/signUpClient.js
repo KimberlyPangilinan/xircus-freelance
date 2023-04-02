@@ -11,7 +11,7 @@ const SignUp = () => {
     <Header/>
     <Container>  
         <Card>
-            <CardHeader><Heading as='h1' size='sm'>Setting Up as Freelancer</Heading></CardHeader>
+            <CardHeader><Heading as='h1' size='sm'>Setting Up as Client</Heading></CardHeader>
             <CardBody>
               <Stack spacing={4}>
                 <Image src='gibbresh.png' fallbackSrc='https://via.placeholder.com/80' width={40} />
@@ -22,14 +22,7 @@ const SignUp = () => {
                   />
                   <Input type='text' placeholder='Username' />
                 </InputGroup>
-                <InputGroup>
-                  <InputLeftElement
-                    pointerEvents='none'
-                    children={<InfoOutlineIcon color='gray.300' />}
-                  />
-                  <Input type='text' placeholder='Name' />
-                </InputGroup>
-
+          
                 <InputGroup>
                   <InputLeftElement
                     pointerEvents='none'
