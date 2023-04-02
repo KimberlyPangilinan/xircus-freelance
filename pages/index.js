@@ -20,9 +20,6 @@ export default function index() {
         <AboutSection/>
         <ServicesSection/>
         <PartnersSection/>
-        //<HowToSection/>
-        //<FaqSection/>
-        //<OnboardingSection/>
         <FooterSection/>
       </div>
 

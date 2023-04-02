@@ -18,7 +18,7 @@ const ServicesSection = () => {
                 <Heading size='md' fontSize={25} fontWeight={250}>Job Board</Heading>
                 <Divider />
             </CardHeader>
-            <CardBody>
+            <CardBody style={{textAlign:"center"}}>
                 <Text>A place where freelancers can browse and accept job opportunities from clients.</Text>
             </CardBody>
             <CardFooter style={{display:"flex",justifyContent:"center"}}>
@@ -30,7 +30,7 @@ const ServicesSection = () => {
                 <Heading size='md' fontSize={25} fontWeight={250}>Freelancers Tavern</Heading>
                 <Divider />
             </CardHeader>
-            <CardBody>
+            <CardBody style={{textAlign:"center"}}>
                 <Text>A platform where clients can connect with freelancers that match their needs.</Text>
             </CardBody>
             <CardFooter style={{display:"flex",justifyContent:"center"}}>
@@ -42,7 +42,7 @@ const ServicesSection = () => {
                 <Heading size='md' fontSize={25} fontWeight={250}>Projects Saloon</Heading>
                 <Divider />
             </CardHeader>
-            <CardBody>
+            <CardBody style={{textAlign:"center"}}>
                 <Text>A marketplace for completed projects minted as NFTs, where freelancers can sell their work.</Text>
             </CardBody>
             <CardFooter style={{display:"flex",justifyContent:"center"}}>
