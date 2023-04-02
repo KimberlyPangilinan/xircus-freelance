@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from '../components/header'
-
+import JobCard from '../components/jobCard'
 import { Text, TabList, TabPanels, TabPanel, Tabs,Tab,Heading,Container } from '@chakra-ui/react'
 import FreelancerCard from '../components/freelancerCard'
 import { useWallet, useNetwork } from '@xircus-web3/react'
