@@ -5,7 +5,14 @@ import { Img } from '@chakra-ui/react'
 import { Image } from '@chakra-ui/react'
 import Header from '../components/header'
 import Btn from '../components/btn'
+import { useWallet, useNetwork } from '@xircus-web3/react'
+import { useQuery, gql } from '@apollo/client';
+
+
+
+
 const SignUp = () => {
+  
   return (
     <div className="SignUp">
     <Header/>
@@ -20,14 +27,14 @@ const SignUp = () => {
                     pointerEvents='none'
                     children={<AtSignIcon color='gray.300' />}
                   />
-                  <Input type='text' placeholder='Username' />
+                  <Input id='username' type='text' placeholder='Username' />
                 </InputGroup>
                 <InputGroup>
                   <InputLeftElement
                     pointerEvents='none'
                     children={<InfoOutlineIcon color='gray.300' />}
                   />
-                  <Input type='text' placeholder='Name' />
+                  <Input id='name' type='text' placeholder='Name' />
                 </InputGroup>
 
                 <InputGroup>
@@ -36,16 +43,26 @@ const SignUp = () => {
                     color='gray.300'
                     fontSize='1.2em'
                   />
-                  <Textarea placeholder='Enter your Bio here' />
+                  <Textarea id='bio' placeholder='Enter your Bio here' />
                 </InputGroup>
                 <InputGroup>
                   <InputLeftElement
                     pointerEvents='none'
                     children={<InfoOutlineIcon color='gray.300' />}
                   />
-                  <Input type='text' placeholder='Interests' />
+                  <Input id='interests' type='text' placeholder='Interests' />
                 </InputGroup>
-                <Btn type={"btn-primary"} title={"UpdateProfile"}/>
+                <Btn type={"btn-primary"}
+                onClick = {(event) => {
+                  var textssss = gql`
+                  mutation Mutation{
+                    addUsers(name: "${document.getElementById("username")}", screenName: "${document.getElementById("name")}", rating: "${0}", skills: "${document.getElementById("interests")}") {
+                      text
+                    }
+                  }`;
+                  
+                }}
+                title={"UpdateProfile"} />
                 <Btn variant='ghost'  title={"Cancel"}/>
               </Stack>
             </CardBody>

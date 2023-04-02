@@ -2,7 +2,13 @@ import React from 'react'
 import Header from '../components/header'
 import { TabList, TabPanels, TabPanel, Tabs,Tab,Heading,Container } from '@chakra-ui/react'
 import FreelancerCard from '../components/freelancerCard'
+import { useWallet, useNetwork } from '@xircus-web3/react'
+
+
+
+
 const BrowseJobs = () => {
+ 
   return (
     <div >
       <Header/> 
