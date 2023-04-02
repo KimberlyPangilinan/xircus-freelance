@@ -21,10 +21,9 @@ const FooterSection = () => {
           </Column>
           <Column>
             <Heading>Services</Heading>
-            <FooterLink href="#">Jobs Board</FooterLink>
-            <FooterLink href="#">Freelancers Tavern</FooterLink>
-            <FooterLink href="#">Projects Saloon</FooterLink>
-            <FooterLink href="#"></FooterLink>
+            <FooterLink href="/browseJobs">Jobs Board</FooterLink>
+            <FooterLink href="/browseFreelancer">Freelancers Tavern</FooterLink>
+            <FooterLink href="/browseProjects">Projects Saloon</FooterLink>
           </Column>
           <Column>
             <Heading>Contact Us</Heading>
