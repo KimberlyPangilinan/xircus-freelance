@@ -15,7 +15,7 @@ export default function Header() {
             <Box p='2'>
               <Heading size='md'><NavLink route="/" name="DecentraHire"/></Heading>
             </Box>
-              <NavLink route="/browseJobs" name="Jobs Board"/>
+              <NavLink route="/browseJobs" name="Job Board"/>
               <NavLink route="/browseFreelancer" name="Freelancers Tavern"/>
               <NavLink route="/browseProjects" name="Projects Saloon"/>
             <Spacer />

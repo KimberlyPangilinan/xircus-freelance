@@ -6,7 +6,7 @@ import {
   Column,
   FooterLink,
   Heading,
-} from "./FooterStyles";
+} from "./footerStyles";
   
 const FooterSection = () => {
   return (
@@ -21,14 +21,13 @@ const FooterSection = () => {
           </Column>
           <Column>
             <Heading>Services</Heading>
-            <FooterLink href="#">Jobs Board</FooterLink>
-            <FooterLink href="#">Freelancers Tavern</FooterLink>
-            <FooterLink href="#">Projects Saloon</FooterLink>
-            <FooterLink href="#">Projects Saloon</FooterLink>
+            <FooterLink href="/browseJobs">Jobs Board</FooterLink>
+            <FooterLink href="/browseFreelancer">Freelancers Tavern</FooterLink>
+            <FooterLink href="/browseProjects">Projects Saloon</FooterLink>
           </Column>
           <Column>
             <Heading>Contact Us</Heading>
-            <FooterLink href="#" style={{fontSize:"9px"}}>nealbartonjamesmatira@gmail.com</FooterLink>
+            <FooterLink href="#" style={{fontSize:"9px"}}>matira.nealbartonjames@gmail.com</FooterLink>
             <FooterLink href="#" style={{fontSize:"9px"}}>carlodominiquetolin@gmail.com</FooterLink>
             <FooterLink href="#" style={{fontSize:"9px"}}>cjeremyreuel@gmail.com</FooterLink>
             <FooterLink href="#" style={{fontSize:"9px"}}>kimberlypangilinan2001@gmail.com</FooterLink>
