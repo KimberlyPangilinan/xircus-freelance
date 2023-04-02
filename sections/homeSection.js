@@ -15,8 +15,8 @@ const HomeSection = () => {
             textAlign:'center',
             gap:'2vh',
             }}>
-            <Heading>Welcome to The DecentraHire</Heading>
-            <Text>Empower transactions, one block at a time.</Text>
+            <Heading fontWeight={400}>Welcome to The DecentraHire!</Heading>
+            <Text fontWeight={100}>Empower transactions, one block at a time.</Text>
             <div className="btn-group">
               <Link href={"/signUp"}><Btn title={"Sign in as Freelancer"} type={"btn-primary"}/></Link>
               <Link href={"/signUpClient"}> <Btn title={"Sign in as Client"} type={"btn-secondary"}/></Link>

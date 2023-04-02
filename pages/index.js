@@ -5,6 +5,7 @@ import { Container } from '@chakra-ui/react'
 import Header from '../components/header'
 import HomeSection from '../sections/homeSection'
 import AboutSection from '../sections/aboutSection'
+import ServicesSection from '../sections/servicesSection'
 import PartnersSection from '../sections/partnersSection'
 import HowToSection from '../sections/howToSection'
 import FaqSection from '../sections/faqSection'
@@ -17,10 +18,11 @@ export default function index() {
         <Header/>
         <HomeSection/>
         <AboutSection/>
+        <ServicesSection/>
         <PartnersSection/>
-        <HowToSection/>
-        <FaqSection/>
-        <OnboardingSection/>
+        //<HowToSection/>
+        //<FaqSection/>
+        //<OnboardingSection/>
         <FooterSection/>
       </div>
 
