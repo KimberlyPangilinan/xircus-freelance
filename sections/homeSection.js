@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, Card, CardHeader, CardBody, CardFooter, Heading, Text } from '@chakra-ui/react'
 import Btn from '../components/btn'
-
+import Link from 'next/link'
 const HomeSection = () => {
   return (
     <section className="homeSection">
@@ -18,8 +18,8 @@ const HomeSection = () => {
             <Heading>Welcome to The DecentraHire</Heading>
             <Text>Empower transactions, one block at a time.</Text>
             <div className="btn-group">
-              <Btn title={"Sign up as Freelancer"} type={"btn-primary"}/>
-              <Btn title={"Sign up as Client"} type={"btn-secondary"}/>
+              <Link href={"/signUp"}><Btn title={"Sign in as Freelancer"} type={"btn-primary"}/></Link>
+              <Link href={"/signUpClient"}> <Btn title={"Sign in as Client"} type={"btn-secondary"}/></Link>
             </div>
           </CardBody>
         </Card>
