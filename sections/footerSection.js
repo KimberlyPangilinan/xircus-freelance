@@ -24,11 +24,11 @@ const FooterSection = () => {
             <FooterLink href="#">Jobs Board</FooterLink>
             <FooterLink href="#">Freelancers Tavern</FooterLink>
             <FooterLink href="#">Projects Saloon</FooterLink>
-            <FooterLink href="#">Projects Saloon</FooterLink>
+            <FooterLink href="#"></FooterLink>
           </Column>
           <Column>
             <Heading>Contact Us</Heading>
-            <FooterLink href="#" style={{fontSize:"9px"}}>nealbartonjamesmatira@gmail.com</FooterLink>
+            <FooterLink href="#" style={{fontSize:"9px"}}>matira.nealbartonjames@gmail.com</FooterLink>
             <FooterLink href="#" style={{fontSize:"9px"}}>carlodominiquetolin@gmail.com</FooterLink>
             <FooterLink href="#" style={{fontSize:"9px"}}>cjeremyreuel@gmail.com</FooterLink>
             <FooterLink href="#" style={{fontSize:"9px"}}>kimberlypangilinan2001@gmail.com</FooterLink>
